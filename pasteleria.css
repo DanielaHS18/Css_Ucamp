@@ -13,13 +13,14 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
     background-color: #ffcce8;
-    height: 80px;
-    padding: 0 50px;
+	padding: 20px;
   }
 
+
   section {
-    max-width: 1920px;
+    max-width: 100%;
     padding: 30px 0;
 
   }  
@@ -27,6 +28,7 @@ header {
   .titulo {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   .titulo img{
     width: 50px;
@@ -45,6 +47,7 @@ header {
   nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
   }
   
   nav ul li {
@@ -85,13 +88,15 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
  }
+ 
  .dent_cont{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 50%;
     height: 300px;
 
     padding: 20px;
@@ -113,12 +118,44 @@ header {
     margin-right: 10px;
     border-radius: 170px;
  }
+ @media (max-width: 500px){
+    .contenedor_i{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+     .dent_cont img{
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+        border-radius: 170px;
+        margin-bottom: 50px;
+     }
+     .cake {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 400px;
+        background-color:#ffedf7;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    
+      }
+
+
+ }
 
 
 .cakes {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .cake {
@@ -132,6 +169,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-right: 20px;
+
   }
   
   .cake h2 {
@@ -173,6 +211,7 @@ header {
 .footer-container {
 	display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
