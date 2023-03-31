@@ -10,6 +10,7 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #ffcce8;
@@ -20,20 +21,25 @@ header {
   section {
     max-width: 1920px;
     padding: 30px 0;
-    background-color: #ffcce8;
+
   }  
 
-     /*Style the links inside the navigation bar */
-   .topnav a {
-    color: #7c0f6d;
-    padding: 20px 35px;
-    text-decoration: none;
-    font-size: 15px;
-    border-radius: 15px;
-    font-weight: bold;
-    word-spacing: 5px;
-  
+  .titulo {
+    display: flex;
+    align-items: center;
   }
+  .titulo img{
+    width: 50px;
+   height: 50px;
+   margin-right: 10px;
+   border-radius: 170px;
+
+}
+.titulo h1{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
 
     
   nav ul {
@@ -68,62 +74,122 @@ header {
     background-color: #ccefff;
     color: rgb(255, 3, 116);
   }
-  .centrar {
-    text-align: right;
-  }
-  
-
-  .titulo {
-    display: flex;
-    align-items: center;
-  }
-  .titulo img{
-    width: 50px;
-   height: 50px;
-   margin-right: 10px;
-   border-radius: 170px;
-
-}
-.titulo h1{
-    font-size: 25px;
-    font-weight: bold;
-  }
 
 
-  
 
   .centrar_p{
     text-align: center;
   }
-  .logo_g{
-    border-radius: 170px; 
+ 
+ .contenedor_i{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .dent_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+
+    padding: 20px;
+    margin-right: 20px;
+ }
+ .dent_cont h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+ }
+ .dent_cont p{
+    font-size: 16px;
+    margin-bottom: 5px;
+ }
+ .dent_cont img{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 170px;
+ }
+
+
+.cakes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
-  #parrafo_1{
-    padding: 10px; 
-    margin: 0 100px;
-    text-align: justify;
+  .cake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color:#ffedf7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  .cake h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cake p {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 
-  #parrafo_2 {
-    padding: 10px; 
-    margin: 0 30px;
-    text-align: justify;
-    } 
- .contenedor{
+  .cake img{
+   width: 185px;
+   height: 150px;
+   margin-right: 10px;
+   border-radius: 170px;
+}
+
+.mi-boton {
+    background-color: #ffc6fd; /* Cambia el color a tu gusto */
+    color: #7c0f6d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mi-boton:hover {
+    background-color: #c9acff; /* Cambia el color a tu gusto */
+  }
+
+  footer {
+	background-color: #ffcce8;
+	padding: 20px;
+}
+
+.footer-container {
+	display: flex;
+    justify-content: space-around;
+
+}
+
+.info {
     display: flex;
-    text-align: center;
- }
-.cajas{
-    height: 150px;
-    width: 150px;
-    background:  #ffcce8;
-    opacity: 50%;
-}
-.contendor2{
-    display: flex; 
-    justify-content: space-evenly;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+	text-align: center;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin-right: 20px;
+    
 }
 
-
+.info p {
+	margin: 5px;
+}
